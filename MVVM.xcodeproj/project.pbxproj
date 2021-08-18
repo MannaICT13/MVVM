@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		17C3ACA026CD0B06007542BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3AC9F26CD0B06007542BD /* AppDelegate.swift */; };
 		17C3ACA226CD0B06007542BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACA126CD0B06007542BD /* SceneDelegate.swift */; };
-		17C3ACA426CD0B06007542BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACA326CD0B06007542BD /* ViewController.swift */; };
 		17C3ACA726CD0B06007542BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C3ACA526CD0B06007542BD /* Main.storyboard */; };
 		17C3ACA926CD0B08007542BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C3ACA826CD0B08007542BD /* Assets.xcassets */; };
 		17C3ACAC26CD0B08007542BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C3ACAA26CD0B08007542BD /* LaunchScreen.storyboard */; };
+		17C3ACB826CD0BA5007542BD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACB726CD0BA5007542BD /* UserModel.swift */; };
+		17C3ACC026CD0CA3007542BD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACBF26CD0CA3007542BD /* ApiService.swift */; };
+		17C3ACC526CD0F84007542BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACC426CD0F84007542BD /* ViewController.swift */; };
+		17C3ACC926CD18F4007542BD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACC826CD18F4007542BD /* ViewModel.swift */; };
+		17C3ACCD26CD1C3F007542BD /* UserTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3ACCB26CD1C3F007542BD /* UserTVCell.swift */; };
+		17C3ACCE26CD1C3F007542BD /* UserTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C3ACCC26CD1C3F007542BD /* UserTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17C3AC9C26CD0B06007542BD /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C3AC9F26CD0B06007542BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17C3ACA126CD0B06007542BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17C3ACA326CD0B06007542BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17C3ACA626CD0B06007542BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17C3ACA826CD0B08007542BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C3ACAB26CD0B08007542BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17C3ACAD26CD0B08007542BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C3ACB726CD0BA5007542BD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		17C3ACBF26CD0CA3007542BD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		17C3ACC426CD0F84007542BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17C3ACC826CD18F4007542BD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		17C3ACCB26CD1C3F007542BD /* UserTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVCell.swift; sourceTree = "<group>"; };
+		17C3ACCC26CD1C3F007542BD /* UserTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,84 @@
 		17C3AC9E26CD0B06007542BD /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				17C3AC9F26CD0B06007542BD /* AppDelegate.swift */,
-				17C3ACA126CD0B06007542BD /* SceneDelegate.swift */,
-				17C3ACA326CD0B06007542BD /* ViewController.swift */,
+				17C3ACD526CD30CA007542BD /* App */,
+				17C3ACB626CD0B3E007542BD /* Model */,
+				17C3ACB426CD0B13007542BD /* ViewModel */,
+				17C3ACB526CD0B30007542BD /* ViewController */,
+				17C3ACD326CD309D007542BD /* Storyboard */,
+				17C3ACBE26CD0C86007542BD /* Service */,
+				17C3ACD426CD30B2007542BD /* Helpers */,
+				17C3ACD126CD308A007542BD /* Views */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		17C3ACB426CD0B13007542BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17C3ACC826CD18F4007542BD /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17C3ACB526CD0B30007542BD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17C3ACC426CD0F84007542BD /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		17C3ACB626CD0B3E007542BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17C3ACB726CD0BA5007542BD /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17C3ACBE26CD0C86007542BD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17C3ACBF26CD0CA3007542BD /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17C3ACD126CD308A007542BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17C3ACCB26CD1C3F007542BD /* UserTVCell.swift */,
+				17C3ACCC26CD1C3F007542BD /* UserTVCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17C3ACD326CD309D007542BD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				17C3ACA526CD0B06007542BD /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		17C3ACD426CD30B2007542BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				17C3ACA826CD0B08007542BD /* Assets.xcassets */,
 				17C3ACAA26CD0B08007542BD /* LaunchScreen.storyboard */,
 				17C3ACAD26CD0B08007542BD /* Info.plist */,
 			);
-			path = MVVM;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		17C3ACD526CD30CA007542BD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				17C3AC9F26CD0B06007542BD /* AppDelegate.swift */,
+				17C3ACA126CD0B06007542BD /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C3ACCE26CD1C3F007542BD /* UserTVCell.xib in Resources */,
 				17C3ACAC26CD0B08007542BD /* LaunchScreen.storyboard in Resources */,
 				17C3ACA926CD0B08007542BD /* Assets.xcassets in Resources */,
 				17C3ACA726CD0B06007542BD /* Main.storyboard in Resources */,
@@ -137,9 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C3ACA426CD0B06007542BD /* ViewController.swift in Sources */,
+				17C3ACC526CD0F84007542BD /* ViewController.swift in Sources */,
 				17C3ACA026CD0B06007542BD /* AppDelegate.swift in Sources */,
+				17C3ACC026CD0CA3007542BD /* ApiService.swift in Sources */,
+				17C3ACB826CD0BA5007542BD /* UserModel.swift in Sources */,
+				17C3ACCD26CD1C3F007542BD /* UserTVCell.swift in Sources */,
 				17C3ACA226CD0B06007542BD /* SceneDelegate.swift in Sources */,
+				17C3ACC926CD18F4007542BD /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +371,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVVM/Info.plist;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = MVVM/Helpers/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVVM/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = MVVM/Helpers/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
